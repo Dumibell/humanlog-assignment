@@ -2,11 +2,17 @@
 
 A React component wrapper for the asciinema-player that allows you to embed terminal recordings in your React applications.
 
-## Props
+## Configuration
 
-The component accepts all options from asciinema-player plus:
+When using this component, you can provide the following options:
 
-- `src` (required): Path to the .cast file or cast-formatted data received from API response
-- `autoplay` (default: true): Automatically start playback
-- `loop` (default: true): Loop the playback
-- All other asciinema-player options are supported
+### Required Options
+
+- `src`: Path to the .cast file or cast-formatted data received from API response
+
+### Default Settings
+
+- `autoplay`: Set to true by default, starts playback automatically
+- `loop`: Set to true by default, repeats playback continuously
+
+All other asciinema-player options are also supported and can be passed as props to customize the player's behavior.
