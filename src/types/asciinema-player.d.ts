@@ -7,8 +7,11 @@ declare module "asciinema-player" {
     speed?: number;
     idleTimeLimit?: number;
     theme?: string;
-    fit?: string;
-    terminalFontSize?: string;
+    fit?: "width" | "height" | "both" | "none" | false;
+    controls: boolean | "auto";
+    markers: number[];
+    pauseOnMarkers: boolean;
+    terminalFontSize?: "small" | "medium" | "big";
     terminalFontFamily?: string;
     terminalLineHeight?: number;
   }
