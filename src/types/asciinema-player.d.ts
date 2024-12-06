@@ -8,9 +8,9 @@ declare module "asciinema-player" {
     idleTimeLimit?: number;
     theme?: string;
     fit?: "width" | "height" | "both" | "none" | false;
-    controls: boolean | "auto";
-    markers: number[];
-    pauseOnMarkers: boolean;
+    controls?: boolean | "auto";
+    markers?: number[];
+    pauseOnMarkers?: boolean;
     terminalFontSize?: "small" | "medium" | "big";
     terminalFontFamily?: string;
     terminalLineHeight?: number;
